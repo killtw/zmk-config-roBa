@@ -55,6 +55,11 @@
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <20 21>;
         };
+
+        mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <19 18>;
+        };
     };
 
     macros {
@@ -102,7 +107,7 @@
         NUM {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0
-&trans          &trans        &trans        &trans        &trans        &kp C_MUTE      &trans  &trans        &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans          &trans        &trans        &trans        &trans        &kp C_MUTE      &trans  &trans        &mkp MB1      &mkp MB3      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans          &trans  &trans        &trans        &trans        &trans            &kp BACKSLASH
 &trans          &trans        &trans        &trans        &trans        &trans          &trans  &trans                                                      &trans
             >;
@@ -121,10 +126,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans    &trans    &trans    &trans
-&kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&kp LEFT_SHIFT  &trans          &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans          &trans          &trans          &trans           &trans   &trans      &trans  &trans                                &trans
+&kp ESCAPE      &trans          &kp UP_ARROW    &trans           &trans                       &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans          &trans          &trans           &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans           &trans   &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;

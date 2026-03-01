@@ -37,12 +37,12 @@
         };
 
         esc {
-            bindings = <&kt ESC>;
+            bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 
         caps {
-            bindings = <&kt CAPS>;
+            bindings = <&kp CAPS>;
             key-positions = <10 11>;
         };
 

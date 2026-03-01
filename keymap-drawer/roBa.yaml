@@ -224,6 +224,10 @@ combos:
 - p: [11, 12]
   k: TAB
 - p: [0, 1]
-  k: {t: ESC, h: toggle}
+  k: ESC
 - p: [10, 11]
-  k: {t: CAPS, h: toggle}
+  k: CAPS
+- p: [19, 20]
+  k: Gui+[
+- p: [20, 21]
+  k: Gui+]

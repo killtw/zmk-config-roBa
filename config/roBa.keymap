@@ -55,11 +55,6 @@
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <20 21>;
         };
-
-        mb2 {
-            bindings = <&mkp MB2>;
-            key-positions = <19 18>;
-        };
     };
 
     macros {
@@ -95,10 +90,21 @@
 
         default_layer {
             bindings = <
-&kt Q             &kp W             &kp E         &kp R         &kp T                                                          &kp Y        &kp U  &kp I               &kp O    &kp P
+&kp Q             &kp W             &kp E         &kp R         &kp T                                                          &kp Y        &kp U  &kp I               &kp O    &kp P
 &kp A             &kp S             &kp D         &kp F         &kp G        &kp C_MUTE                         &kp MINUS      &kp H        &kp J  &lt_to_layer_0 2 K  &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V         &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA           &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 4 CAPSLOCK    &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 3 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                      &kp DEL
+&lt 5 CAPSLOCK    &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 4 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                                      &kp DEL
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -107,21 +113,23 @@
         NUM {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0
-&trans          &trans        &trans        &trans        &trans        &kp C_MUTE      &trans  &trans        &mkp MB1      &mkp MB3      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans          &trans        &trans        &trans        &trans        &kp C_MUTE      &trans  &trans        &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans          &trans  &trans        &trans        &trans        &trans            &kp BACKSLASH
 &trans          &trans        &trans        &trans        &trans        &trans          &trans  &trans                                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp F11  &kp F12  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans   &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp F11  &kp F12  &trans  &trans  &trans  &kp C_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans  &trans  &trans  &trans          &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         ARROW {

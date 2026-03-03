@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - {t: '&to_layer_0 CAPSLOCK', h: BLE}
+  - {t: BLE, h: toggle}
   - LEFT CONTROL
   - LEFT ALT
   - LEFT GUI
@@ -255,7 +255,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -265,7 +265,7 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR ALL
 combos:
-- p: [11, 10]
+- p: [11, 12]
   k: TAB
 - p: [0, 1]
   k: ESC
@@ -275,3 +275,5 @@ combos:
   k: Gui+]
 - p: [0, 1]
   k: '`'
+- p: [10, 11]
+  k: CAPSLOCK

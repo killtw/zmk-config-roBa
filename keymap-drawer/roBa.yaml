@@ -20,9 +20,9 @@ layers:
   - '-'
   - H
   - J
-  - {t: '&to_layer_0 K', h: NUM}
-  - L
-  - ''''
+  - {t: K, h: NUM}
+  - {t: L, h: '['}
+  - {t: '''', h: ']'}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -39,10 +39,10 @@ layers:
   - LEFT CONTROL
   - LEFT ALT
   - LEFT GUI
-  - {t: '&to_layer_0 SPACE', h: ARROW}
+  - {t: SPACE, h: ARROW}
   - {t: '&to_layer_0 INT_MUHENKAN', h: FUNCTION}
   - BACKSPACE
-  - {t: '&to_layer_0 ENTER', h: NUM}
+  - {t: ENTER, h: NUM}
   - DEL
   MOUSE:
   - {t: ▽, type: trans}
@@ -106,10 +106,10 @@ layers:
   - {t: ▽, type: trans}
   - MUTE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - '['
+  - LEFT ARROW
+  - UP
+  - {t: DOWN, type: held}
+  - {t: RIGHT, h: '['}
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

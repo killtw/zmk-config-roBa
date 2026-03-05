@@ -7,7 +7,8 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <180>;
+    tapping-term-ms = <180>;
 };
 
 &trackball {
@@ -49,11 +50,6 @@
         next {
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <20 21>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <0 1>;
         };
 
         caps {
@@ -98,7 +94,7 @@
 &kp Q             &kp W             &kp E         &kp R         &kp T                                                          &kp Y        &kp U  &kp I      &kp O               &kp P
 &kp A             &kp S             &kp D         &kp F         &kp G        &kp C_MUTE                         &kp MINUS      &kp H        &kp J  &lt 2 K    &mt LEFT_BRACKET L  &mt RIGHT_BRACKET SINGLE_QUOTE
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V         &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT             &mt RIGHT_SHIFT SLASH
-&to 5             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 4 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                                        &kp DEL
+&lt 5 GRAVE       &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 4 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                                        &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;

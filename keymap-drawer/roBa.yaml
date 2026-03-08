@@ -17,30 +17,30 @@ layers:
   - F
   - G
   - MUTE
-  - '-'
+  - ''''
   - H
   - J
   - {t: K, h: NUM}
   - {t: L, h: '['}
-  - {t: '''', h: ']'}
+  - {t: ;, h: ']'}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
-  - ':'
-  - ;
+  - '='
+  - '-'
   - N
   - M
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - {t: BLE, h: toggle}
+  - {t: '`', h: BLE}
   - LEFT CONTROL
   - LEFT ALT
   - LEFT GUI
   - {t: SPACE, h: ARROW}
-  - {t: '&to_layer_0 INT_MUHENKAN', h: FUNCTION}
+  - {t: ESC, h: FUNCTION}
   - BACKSPACE
   - {t: ENTER, h: NUM}
   - DEL
@@ -255,7 +255,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -273,7 +273,5 @@ combos:
   k: Gui+[
 - p: [20, 21]
   k: Gui+]
-- p: [0, 1]
-  k: '`'
 - p: [10, 11]
   k: CAPSLOCK

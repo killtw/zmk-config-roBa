@@ -43,7 +43,7 @@ layers:
   - {t: ESC, h: FUNCTION}
   - BACKSPACE
   - {t: ENTER, h: NUM}
-  - DEL
+  - \
   MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
